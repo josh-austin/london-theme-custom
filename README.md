@@ -1,7 +1,10 @@
 london-theme-custom
 ===================
 
-Source code to quickly customize colors and fonts for the London Theme in Outsystems
+Source code to quickly customize colors for the London Theme in Outsystems
+
+![alt text](https://github.com/josh-austin/london-theme-custom/blob/master/london_teal_and_brown.PNG "Custom theme example")
+
 
 ## Compilation
 To compile to CSS, refer to [this page](http://lesscss.org/#using-less).
