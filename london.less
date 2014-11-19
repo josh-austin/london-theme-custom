@@ -1,9 +1,10 @@
-@primary-bg-color: #333;
-@primary-fg-color: #fff;
-@secondary-color: #d1d1d1;
-@accent-bg-color: #d43e27;
+@primary-bg-color: #effb41;
+@primary-fg-color: #000;
+@secondary-bg-color: @primary-bg-color;
+@secondary-fg-color: @primary-fg-color;
+@accent-bg-color: #00bcd4;
 @accent-fg-color: #fff;
-@link-color: #d43e27;
+@link-color: @accent-bg-color;
 
 .Header, 
 .Menu_TopMenuActive {
@@ -26,14 +27,14 @@ a.Login_Info_Username:visited,
 .Menu_TopMenuActive:hover a,
 .Menu_TopMenuActive a:link,
 .Menu_TopMenuActive a:visited {
-    color: @secondary-color;
+    color: @secondary-fg-color;
 }
 
 .AppSwitcherList,
 .Application_Menu .Menu_DropDownButton,
 .Header_Menu,
 .Application_Menu {
-  background: @secondary-color;
+  background: @secondary-bg-color;
 }
 
 .Menu_TopMenu a, 
@@ -50,8 +51,8 @@ a.Login_Info_Username:visited,
 }
 
 .Button {
-    background: @secondary-color;
-    border: 1px solid @secondary-color;
+    background: @secondary-bg-color;
+    border: 1px solid @secondary-bg-color;
     color: @primary-fg-color;
 }
 
@@ -83,7 +84,7 @@ a.Login_Info_Username:visited,
 .Application_Menu a.Menu_SubMenuItem:hover, 
 .Application_Menu a.Menu_SubMenuItem:link, 
 .Application_Menu a.Menu_SubMenuItem:visited {
-    background-color: darken(@secondary-color, 10%);
+    background-color: darken(@secondary-bg-color, 10%);
     border-bottom: none;
     color: @link-color;
 }
