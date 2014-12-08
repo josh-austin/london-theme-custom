@@ -1,14 +1,8 @@
-@primary-bg-color: #009688;
-@primary-fg-color: #fff;
-@secondary-bg-color: @primary-bg-color;
-@secondary-fg-color: @primary-fg-color;
-@accent-bg-color: #795548;
-@accent-fg-color: #fff;
-@link-color: @accent-bg-color;
-
+@import "variables";
+    
 .Header, 
 .Menu_TopMenuActive {
-    background: @primary-bg-color;
+    background: @color-1-bg;
 }
 
 .Application_Title a,
@@ -27,14 +21,15 @@ a.Login_Info_Username:visited,
 .Menu_TopMenuActive:hover a,
 .Menu_TopMenuActive a:link,
 .Menu_TopMenuActive a:visited {
-    color: @secondary-fg-color;
+    background-color: @color-1-bg;
+    color: @color-1-fg;
 }
 
 .AppSwitcherList,
 .Application_Menu .Menu_DropDownButton,
 .Header_Menu,
 .Application_Menu {
-  background: @secondary-bg-color;
+  background: @color-2-bg;
 }
 
 .Menu_TopMenu a, 
@@ -45,15 +40,15 @@ a.Login_Info_Username:visited,
 
 .ButtonDefault,
 .Button.Is_Default {
-    background: @accent-bg-color;
-    border: 1px solid @accent-bg-color;
-    color: @accent-fg-color;
+    background: @color-1-bg;
+    border: 1px solid @color-1-bg;
+    color: @color-1-fg;
 }
 
 .Button {
-    background: @secondary-bg-color;
-    border: 1px solid @secondary-bg-color;
-    color: @primary-fg-color;
+    background: @color-2-bg;
+    border: 1px solid @color-2-bg;
+    color: @color-2-fg;
 }
 
 .Application_Title img {
@@ -72,34 +67,34 @@ a.Login_Info_Username:visited,
 .Menu_TopMenu a:link, 
 .Menu_TopMenu a:visited, 
 .Menu_TopMenu a {
-    color: @link-color;
-    border-bottom-color: @link-color;
+    color: @color-2-fg;
+    border-bottom-color: @color-2-bg;
 }
 
 .Menu_DropDownArrow {
-    border-top-color: @link-color;
+    border-top-color: @color-2-bg;
 }
 
 .Application_Menu a.Menu_SubMenuItem, 
 .Application_Menu a.Menu_SubMenuItem:hover, 
 .Application_Menu a.Menu_SubMenuItem:link, 
 .Application_Menu a.Menu_SubMenuItem:visited {
-    background-color: darken(@secondary-bg-color, 10%);
+    background-color: darken(@color-2-bg, 10%);
     border-bottom: none;
-    color: @link-color;
+    color: @color-2-fg;
 }
 
 .Application_Menu a.Menu_SubMenuItemActive:link, 
 .Application_Menu a.Menu_SubMenuItemActive:visited,
 .Application_Menu a.Menu_SubMenuItem:hover {
-    color: @primary-bg-color;
+    color: @color-1-fg;
 }
 
 a, 
 a:link, 
 a:visited,
 .EditableTable tr.RowControlGroup a {
-  color: @link-color;
+  color: @color-1-bg;
 }
 
 a.ActionAdd:before,
@@ -107,12 +102,12 @@ a.ActionEdit:before,
 a.ActionDelete:before,
 a.ActionChange:before,
 .Actions [class^=fa] {
-    background: @accent-bg-color;
-    color: @accent-fg-color;
+    background: @color-1-bg;
+    color: @color-1-fg;
 }
 
 @media screen and (max-width: 1023px) { 
     .Responsive .Login_Info_Logout:before {
-         color: @link-color;
+         color: @color-2-bg;
     }
 }
