@@ -7,13 +7,12 @@ Source code to quickly customize colors for the London Theme in Outsystems
 
 
 ## Compilation
-To compile to CSS, refer to [this page](http://lesscss.org/#using-less).
+To compile to CSS, run the command `lessc london.less > london.css`  
+For details, refer to [this page](http://lesscss.org/#using-less).
+
+## Create a new theme
+Simply change the color variables in `variables.less`, compile, and copy/paste the contents of your generated london.css into your project theme.
 
 ## Variables
-`@primary-bg-color` - the background color for the page header  
-`@primary-fg-color` - the foreground color for the page header  
-`@secondary-bg-color` - the background color for non-active buttons (preferably the same as the primary color)  
-`@secondary-fg-color` - the foreground color for non-active buttons (preferably the same as the primary color)  
-`@accent-bg-color` - the background color for action icons and active buttons  
-`@accent-fg-color` - the foreground color for action icons and active buttons  
-`@link-color` - the color for the links (preferably the same as the accent color)
+`@color-1-bg` - the background color for the page header  
+`@color-1-fg` - the foreground color for the page header
